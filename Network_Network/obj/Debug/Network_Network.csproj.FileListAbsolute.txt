@@ -1,0 +1,10 @@
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\bin\Debug\Network_Network.exe.config
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\bin\Debug\Network_Network.exe
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\bin\Debug\Network_Network.pdb
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.csprojAssemblyReference.cache
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.Form1.resources
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.Properties.Resources.resources
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.csproj.GenerateResource.cache
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.csproj.CoreCompileInputs.cache
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.exe
+C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.pdb
