@@ -4,8 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.IO.Ports;
-
 namespace Network_Network
 {
     static class Program
@@ -19,10 +17,6 @@ namespace Network_Network
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
-
-
         }
     }
-
 }

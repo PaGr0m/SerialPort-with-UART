@@ -8,3 +8,13 @@ C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\
 C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.csproj.CoreCompileInputs.cache
 C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.exe
 C:\Users\Pavel Gromov\Desktop\Labs\VS\Network_Network\Network_Network\obj\Debug\Network_Network.pdb
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\bin\Debug\Network_Network.exe.config
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\bin\Debug\Network_Network.exe
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\bin\Debug\Network_Network.pdb
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.csprojAssemblyReference.cache
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.Form1.resources
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.Properties.Resources.resources
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.csproj.GenerateResource.cache
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.csproj.CoreCompileInputs.cache
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.exe
+E:\University\Course_3\Labs\VS\SerialPort-with-UART\Network_Network\obj\Debug\Network_Network.pdb
