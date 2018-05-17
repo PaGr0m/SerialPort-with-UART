@@ -18,6 +18,8 @@ namespace Network_Network
         private SerialPort serialPort = new SerialPort();
         private System.Timers.Timer timer;
 
+        string stack = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +46,8 @@ namespace Network_Network
 
             if (serialPort.IsOpen == false)
             {
-                //serialPort.DataReceived += new SerialDataReceivedEventHandler(ReadPort);
+                serialPort.DataReceived += new SerialDataReceivedEventHandler(ReadPort);
+
                 //timer = new System.Timers.Timer(300);
                 //timer.Elapsed += new ElapsedEventHandler(OnTimedEvent);
                 //timer.AutoReset = true;
@@ -69,13 +72,19 @@ namespace Network_Network
             }
         }
 
-        private void ReadPort(/*object sender, SerialDataReceivedEventArgs e*/)
+        void ReadPort(object sender, SerialDataReceivedEventArgs e)
         {
-            byte[] buffer = new byte[serialPort.ReadBufferSize];
-            int bytesRead = serialPort.Read(buffer, 0, buffer.Length);
+            SerialPort sp = (SerialPort)sender;
+            string data = sp.ReadExisting();
 
-            string textRead = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-            PrintToPortConsole(textRead);
+            stack += data;
+
+
+            //byte[] buffer = new byte[serialPort.ReadBufferSize];
+            //int bytesRead = serialPort.Read(buffer, 0, buffer.Length);
+
+            //string textRead = Encoding.ASCII.GetString(buffer, 0, bytesRead);
+            //PrintToPortConsole(textRead);
         }
 
         private void WritePort()
@@ -95,7 +104,7 @@ namespace Network_Network
 
         private void PrintToPortConsole(string text)
         {
-            PortConsole.Items.Add(text);
+            PortConsole.Text += text;
         }
 
         private void PrintToPortStatus(string status)
@@ -126,8 +135,30 @@ namespace Network_Network
 
         private void button2_Click(object sender, EventArgs e)
         {
-            PortConsole.Items.Clear();
-            ReadPort();
+            //PortConsole.Items.Clear();
+            //ReadPort();
+        }
+
+        private void timerPort_Tick(object sender, EventArgs e)
+        {
+            if (serialPort.IsOpen)
+            {
+                if (stack != "" && stack != "\n")
+                {
+                    int idx = stack.IndexOf('\n');
+                    Console.Write(stack + '\n');
+                    //Console.Write(idx);
+
+                    if (idx != -1)
+                    {
+                        string cutStr = stack.Substring(0, idx+1);
+                        stack = stack.Remove(0, idx+1);
+
+                        PrintToPortConsole(cutStr);
+                        //Console.Write(cutStr);
+                    }
+                }
+            }
         }
     }
 }

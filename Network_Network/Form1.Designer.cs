@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Connect = new System.Windows.Forms.Button();
             this.comboBoxPortsName = new System.Windows.Forms.ComboBox();
             this.buttonSearch = new System.Windows.Forms.Button();
@@ -35,20 +36,21 @@
             this.Disconnect = new System.Windows.Forms.Button();
             this.comboBoxBaudrate = new System.Windows.Forms.ComboBox();
             this.listBoxStatus = new System.Windows.Forms.ListBox();
-            this.PortConsole = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxWrite = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.timerPort = new System.Windows.Forms.Timer(this.components);
+            this.PortConsole = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Connect
             // 
-            this.Connect.Location = new System.Drawing.Point(9, 128);
-            this.Connect.Margin = new System.Windows.Forms.Padding(2);
+            this.Connect.Location = new System.Drawing.Point(12, 158);
+            this.Connect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Connect.Name = "Connect";
-            this.Connect.Size = new System.Drawing.Size(91, 21);
+            this.Connect.Size = new System.Drawing.Size(121, 26);
             this.Connect.TabIndex = 2;
             this.Connect.Text = "Connect";
             this.Connect.UseVisualStyleBackColor = true;
@@ -57,18 +59,18 @@
             // comboBoxPortsName
             // 
             this.comboBoxPortsName.FormattingEnabled = true;
-            this.comboBoxPortsName.Location = new System.Drawing.Point(8, 28);
-            this.comboBoxPortsName.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxPortsName.Location = new System.Drawing.Point(11, 34);
+            this.comboBoxPortsName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxPortsName.Name = "comboBoxPortsName";
-            this.comboBoxPortsName.Size = new System.Drawing.Size(92, 21);
+            this.comboBoxPortsName.Size = new System.Drawing.Size(121, 24);
             this.comboBoxPortsName.TabIndex = 3;
             // 
             // buttonSearch
             // 
-            this.buttonSearch.Location = new System.Drawing.Point(118, 28);
-            this.buttonSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSearch.Location = new System.Drawing.Point(157, 34);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(65, 21);
+            this.buttonSearch.Size = new System.Drawing.Size(87, 26);
             this.buttonSearch.TabIndex = 4;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = true;
@@ -81,19 +83,21 @@
             this.groupBox1.Controls.Add(this.comboBoxPortsName);
             this.groupBox1.Controls.Add(this.Connect);
             this.groupBox1.Controls.Add(this.buttonSearch);
-            this.groupBox1.Location = new System.Drawing.Point(37, 40);
+            this.groupBox1.Location = new System.Drawing.Point(49, 49);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(231, 184);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(308, 226);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
             // 
             // Disconnect
             // 
-            this.Disconnect.Location = new System.Drawing.Point(118, 128);
-            this.Disconnect.Margin = new System.Windows.Forms.Padding(2);
+            this.Disconnect.Location = new System.Drawing.Point(157, 158);
+            this.Disconnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Disconnect.Name = "Disconnect";
-            this.Disconnect.Size = new System.Drawing.Size(91, 21);
+            this.Disconnect.Size = new System.Drawing.Size(121, 26);
             this.Disconnect.TabIndex = 6;
             this.Disconnect.Text = "Disconnect";
             this.Disconnect.UseVisualStyleBackColor = true;
@@ -102,41 +106,38 @@
             // comboBoxBaudrate
             // 
             this.comboBoxBaudrate.FormattingEnabled = true;
-            this.comboBoxBaudrate.Location = new System.Drawing.Point(8, 67);
+            this.comboBoxBaudrate.Location = new System.Drawing.Point(11, 82);
+            this.comboBoxBaudrate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxBaudrate.Name = "comboBoxBaudrate";
-            this.comboBoxBaudrate.Size = new System.Drawing.Size(92, 21);
+            this.comboBoxBaudrate.Size = new System.Drawing.Size(121, 24);
             this.comboBoxBaudrate.TabIndex = 5;
             // 
             // listBoxStatus
             // 
             this.listBoxStatus.FormattingEnabled = true;
-            this.listBoxStatus.Location = new System.Drawing.Point(45, 269);
+            this.listBoxStatus.ItemHeight = 16;
+            this.listBoxStatus.Location = new System.Drawing.Point(60, 331);
+            this.listBoxStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxStatus.Name = "listBoxStatus";
-            this.listBoxStatus.Size = new System.Drawing.Size(122, 17);
+            this.listBoxStatus.Size = new System.Drawing.Size(161, 20);
             this.listBoxStatus.TabIndex = 6;
-            // 
-            // PortConsole
-            // 
-            this.PortConsole.Location = new System.Drawing.Point(390, 157);
-            this.PortConsole.Name = "PortConsole";
-            this.PortConsole.Size = new System.Drawing.Size(121, 97);
-            this.PortConsole.TabIndex = 7;
-            this.PortConsole.UseCompatibleStateImageBehavior = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 50);
+            this.label1.Location = new System.Drawing.Point(469, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(41, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Send";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(403, 86);
+            this.button1.Location = new System.Drawing.Point(537, 106);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 10;
             this.button1.Text = "Send";
             this.button1.UseVisualStyleBackColor = true;
@@ -144,34 +145,50 @@
             // 
             // textBoxWrite
             // 
-            this.textBoxWrite.Location = new System.Drawing.Point(415, 50);
+            this.textBoxWrite.Location = new System.Drawing.Point(553, 62);
+            this.textBoxWrite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxWrite.Name = "textBoxWrite";
-            this.textBoxWrite.Size = new System.Drawing.Size(143, 20);
+            this.textBoxWrite.Size = new System.Drawing.Size(189, 22);
             this.textBoxWrite.TabIndex = 11;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(450, 293);
+            this.button2.Location = new System.Drawing.Point(600, 361);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 12;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // timerPort
+            // 
+            this.timerPort.Enabled = true;
+            this.timerPort.Interval = 1000;
+            this.timerPort.Tick += new System.EventHandler(this.timerPort_Tick);
+            // 
+            // PortConsole
+            // 
+            this.PortConsole.Location = new System.Drawing.Point(487, 207);
+            this.PortConsole.Multiline = true;
+            this.PortConsole.Name = "PortConsole";
+            this.PortConsole.Size = new System.Drawing.Size(234, 107);
+            this.PortConsole.TabIndex = 13;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PortConsole);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxWrite);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PortConsole);
             this.Controls.Add(this.listBoxStatus);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -188,11 +205,12 @@
         private System.Windows.Forms.ComboBox comboBoxBaudrate;
         private System.Windows.Forms.ListBox listBoxStatus;
         private System.Windows.Forms.Button Disconnect;
-        private System.Windows.Forms.ListView PortConsole;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxWrite;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timerPort;
+        private System.Windows.Forms.TextBox PortConsole;
     }
 }
 
